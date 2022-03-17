@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@700;900&family=Markazi+Text:wght@400;600;700&family=Poppins:ital,wght@1,500&family=Roboto+Slab:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+
+    <link href="css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>IT EXAM</title>
+</head>
+<body>
+
+    <section >
+      
+        <div class="login">
+            <header>
+                <div style="width: 70%; padding-left: 30px;">IT - Exam<br>
+                    <span id="student_name" style="font-size: 18px;"><u> Student Name:</u> </span>
+                </div>
+
+                <div style="width: 10%;text-align: center;padding-top: 10px;border-right: 1px solid white;border-left: 1px solid white;">
+                    <i onclick="finish()" class="fa-solid fa-circle-stop" style="font-size: 50px;color: rgb(233, 225, 225);"></i>
+                    <!-- <img width="50" src="https://www.svgrepo.com/show/121905/stop.svg" alt=""> -->
+                    <h3 style="color: whitesmoke;font-size: 20px;">FINISH</h3>
+                </div>
+
+                <div style="width: 15%;padding-left: 10px;padding-top: 10px;">
+                    <i class="fa-solid fa-clock" style="font-size: 50px;color: rgb(233, 225, 225);"></i>
+                    <h3 style="color: white;">LEFT TIME</h3>
+                </div>
+
+                <div style="width: 15%;line-height: 100px; font-size: 20px;font-family: 'Roboto Slab', serif;color: white;">
+                    
+                    <span id="clock"></span>
+                </div>
+
+            </header>
+            
+            <main >
+                <div class="main"> 
+                    <div id="name_container">
+                        <h2 >Select your name ?</h2>
+                        <select name="" id="names" style="width: 200px;padding: 7px;">
+                            <option value="" >--Please choose Your Name--</option>
+                            <option value="Aya" >Aya</option>
+                            <option value="Rania">Rania</option>
+                            <option value="Jasmen">Jasmen</option>
+                            <option value="Mohamed">Mohamed</option>
+                            <option value="Ahmed">Ahmed</option>
+                        </select>
+                    </div>
+                  
+
+                    <div >
+                        <label for="" id="question_no"  ></label>
+                        <div id="answer"  onclick="radio_value()"></div>
+                    </div>
+
+                </div>
+            </main>
+
+            <footer >
+                <div style="width: 15%;text-align: center;"><button id="btn_back" style="visibility: hidden;"><i class="fa-solid fa-backward"></i> &nbsp; Back</button></div>
+                <div style="width: 30%;"><div class="container_div" style="margin:auto;" id="btn_start"><button id="start" style="text-align: center;">Start</button> </div></div>
+                <div style="width: 15%;text-align: center;"><button style="visibility: hidden;" id="btn_next">Next &nbsp;<i class="fa-solid fa-forward"></i></button></div>
+            </footer>
+        </div>
+    </section>
+
+
+
+ 
+    <script defer src="js/all.min.js"></script>
+    <script src="js/proj.js"></script>
+    
+</body>
+</html>
+
